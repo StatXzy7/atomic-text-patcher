@@ -1,0 +1,21 @@
+[package]
+name = "atomic-text-patcher"
+version = "0.1.0"
+edition = "2021"
+description = "Transactionally apply batches of text patches (create/delete/replace) to a project directory"
+license = "MIT"
+
+[lib]
+name = "atomic_text_patcher"
+path = "src/lib.rs"
+
+[[bin]]
+name = "atp"
+path = "src/bin/atp.rs"
+
+[[bin]]
+name = "atp-demo"
+path = "demo/main.rs"
+
+[profile.release]
+panic = "unwind"

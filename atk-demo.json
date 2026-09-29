@@ -1,0 +1,7 @@
+{
+  "kind": "terminal",
+  "setup": [
+    ["cargo", "build", "--release", "--bin", "atp", "--bin", "atp-demo"]
+  ],
+  "start": ["./target/release/atp-demo"]
+}
